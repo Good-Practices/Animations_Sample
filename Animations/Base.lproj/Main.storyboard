@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="tfZ-c0-aOY">
+                                <rect key="frame" x="16" y="60" width="382" height="670"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="kjQ-6f-hYn">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="221.5"/>
+                                        <subviews>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZW-p4-CPZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="221.5"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZY-Ot-vtg">
+                                                <rect key="frame" x="128.5" y="0.0" width="125" height="221.5"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtV-DE-00K">
+                                                <rect key="frame" x="256.5" y="0.0" width="125.5" height="221.5"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="POG-9n-lXt">
+                                        <rect key="frame" x="0.0" y="224.5" width="382" height="221"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAD-67-agC">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="221"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9s-SA-tGD">
+                                                <rect key="frame" x="128.5" y="0.0" width="125" height="221"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-jo-dGh">
+                                                <rect key="frame" x="256.5" y="0.0" width="125.5" height="221"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="rHF-vV-Mrh">
+                                        <rect key="frame" x="0.0" y="448.5" width="382" height="221.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXT-pD-e9U">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="221.5"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-IX-CGy">
+                                                <rect key="frame" x="128.5" y="0.0" width="125" height="221.5"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qi-bQ-rR4">
+                                                <rect key="frame" x="256.5" y="0.0" width="125.5" height="221.5"/>
+                                                <color key="backgroundColor" name="flatOrange"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRr-KN-OD8">
+                                <rect key="frame" x="16" y="746" width="382" height="100"/>
+                                <color key="backgroundColor" name="flatAlizarin"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="100" id="5Kq-tK-dZZ"/>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="XGZ-6f-759"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRr-KN-OD8" secondAttribute="trailing" constant="16" id="7Uu-23-nRj"/>
+                            <constraint firstItem="tfZ-c0-aOY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="HfO-de-ZF0"/>
+                            <constraint firstItem="FRr-KN-OD8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QXR-I0-Jjj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tfZ-c0-aOY" secondAttribute="trailing" constant="16" id="bbf-TZ-By0"/>
+                            <constraint firstItem="tfZ-c0-aOY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eVp-wG-sNw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FRr-KN-OD8" secondAttribute="bottom" constant="16" id="mwk-Cq-wkj"/>
+                            <constraint firstItem="FRr-KN-OD8" firstAttribute="top" secondItem="tfZ-c0-aOY" secondAttribute="bottom" constant="16" id="t4O-YG-val"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstPriorityConstraint" destination="5Kq-tK-dZZ" id="0r9-ae-qOy"/>
+                        <outlet property="priorityView" destination="FRr-KN-OD8" id="jZp-kW-C1O"/>
+                        <outlet property="secondPriorityConstraint" destination="XGZ-6f-759" id="i6M-XL-vrv"/>
+                        <outletCollection property="views" destination="XZW-p4-CPZ" collectionClass="NSMutableArray" id="DUs-y1-DQH"/>
+                        <outletCollection property="views" destination="XZY-Ot-vtg" collectionClass="NSMutableArray" id="xEC-WI-iau"/>
+                        <outletCollection property="views" destination="gtV-DE-00K" collectionClass="NSMutableArray" id="BFN-BS-I3z"/>
+                        <outletCollection property="views" destination="yAD-67-agC" collectionClass="NSMutableArray" id="9Dn-sY-ReB"/>
+                        <outletCollection property="views" destination="I9s-SA-tGD" collectionClass="NSMutableArray" id="P0S-zK-D2T"/>
+                        <outletCollection property="views" destination="x4K-jo-dGh" collectionClass="NSMutableArray" id="lcI-c5-wbd"/>
+                        <outletCollection property="views" destination="wXT-pD-e9U" collectionClass="NSMutableArray" id="jVS-v4-lRY"/>
+                        <outletCollection property="views" destination="YaH-IX-CGy" collectionClass="NSMutableArray" id="hvO-p8-L6M"/>
+                        <outletCollection property="views" destination="3qi-bQ-rR4" collectionClass="NSMutableArray" id="Prv-hW-Djg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="flatAlizarin">
+            <color red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="flatOrange">
+            <color red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
