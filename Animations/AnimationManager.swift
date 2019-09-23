@@ -37,7 +37,9 @@ open class AnimationManager {
         }
         
         propertyAnimator.addCompletion { _ in
-//            this is not the best way to reverse an animation there is a property called reversed but somehow wasnt able to triger it :/
+/*            this is not the best way to reverse an animation there is a property called reversed but somehow wasnt able to triger it :/
+             and this is also not a good way of doing an animation if we know that the animation is running whenever its initialized then we need to use a static function that runns an animation as seen on 'fadeIn() function'
+*/
             let finisherAnimator = UIViewPropertyAnimator(duration: duration, controlPoint1: controlPoint2, controlPoint2: controlPoint1) {
                 view.alpha = !isFadeIn ? 1 : 0
             }
@@ -47,7 +49,7 @@ open class AnimationManager {
     }
     
     func fadeIn(view: UIView, for duration: TimeInterval = 0.5) {
-        
+//        when we are using animation function and we dont need to interact with it we can just use the runningPropertyAnimator
         UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {
             view.alpha = 1
         }, completion: nil)
@@ -62,6 +64,7 @@ open class AnimationManager {
         firstPriorityConstraint.priority = .defaultLow
         secondPriorityConstraint.priority = .defaultHigh
         let propertyAnimator = UIViewPropertyAnimator(duration: duration, curve: .easeInOut) {
+//            when we change constraint prioritys to see the animation we need to call layoutifneed but on the superview otherwise we will see the change on completion
             view.superview?.layoutIfNeeded()
         }
         propertyAnimator.startAnimation()
@@ -71,7 +74,7 @@ open class AnimationManager {
         let propertyAnimator = UIViewPropertyAnimator(duration: duration, curve: .easeIn) {
             view.transform = CGAffineTransform(scaleX: scaleX, y: scaleY)
         }
-        
+//        a chaining example
         propertyAnimator.addAnimations({
             view.backgroundColor = UIColor(named: "flatAlizarin")
         }, delayFactor: 0.2)
