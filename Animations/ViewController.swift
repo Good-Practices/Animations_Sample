@@ -30,7 +30,9 @@ class ViewController: UIViewController {
             self.animationManager.fadeInOut(view: self.views[2], isFadeIn: false)
             self.animationManager.animateConstraintByPriority(view: self.priorityView , firstPriorityConstraint: self.firstPriorityConstraint, secondPriorityConstraint: self.secondPriorityConstraint)
             self.animationManager.resize(view: self.views[4], duration: 2, scaleX: 1.5, scaleY: 1.5)
-            self.animationManager.changeColor(view: self.views[3], duration: 2, firstColor: .blue, secondColor: .orange)
+            self.animationManager.changeColor(view: self.views[3], duration: 2, firstColor: .blue, secondColor: UIColor(named: "flatOrange")!)
+            self.animationManager.rotateWithRounding(view: self.views[5], duration: 2)
+            self.animationManager.rotate(view: self.views[6], duration: 2)
         }
     }
  

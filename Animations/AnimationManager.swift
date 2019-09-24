@@ -98,4 +98,34 @@ open class AnimationManager {
         }
     }
     
+    func rotate(view: UIView, duration: TimeInterval = 0.5) {
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {
+            view.transform = CGAffineTransform(rotationAngle: .pi)
+            view.backgroundColor = .purple
+            view.layer.cornerRadius = 25
+        }) { _ in
+            view.transform = .identity
+            view.backgroundColor = UIColor(named: "flatOrange")
+            view.layer.cornerRadius = 0
+        }
+    }
+    
+    func rotateWithRounding(view: UIView, duration: TimeInterval = 0.5) {
+        let propertyAnimator = UIViewPropertyAnimator(duration: duration, curve: .easeIn, animations: {
+            view.transform = CGAffineTransform(rotationAngle: .pi)
+            view.backgroundColor = .purple
+            view.layer.cornerRadius = view.frame.height / 2
+        })
+        
+        propertyAnimator.addCompletion({ _ in
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration, delay: duration, options: .curveEaseOut, animations: {
+                view.transform = .identity
+                view.backgroundColor = UIColor(named: "flatOrange")
+                view.layer.cornerRadius = 0
+            }, completion: nil)
+        })
+        
+        propertyAnimator.startAnimation()
+    }
+    
 }
