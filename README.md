@@ -4,6 +4,23 @@ Good practices while creating animations in iOS using Swift
 ## Doing Animation
 There are many types of animation style but in this repo we wanted to use a high level API which is 'UIPropertyAnimator' because it gives the flexibility to pause stop and start animation at several times and interact while the animation goes on there are also low level API such as Core Animation but to do CA we need to know which keyPath to go on etc. why we are not using UIView.animate because its not chainable and heared some rumors about it which says that its gona be deprecated...
 
+#### Supports
+Framework | Version Support
+------------ | -------------
+UIPropertyAnimator | iOS 10.0+
+UIView.Animate | *iOS 4.0+*
+Core Animation | *iOS 2.0+*
+
+## When To Use
+* UIView's animation methods
+These are still the easiest to use in my opinion. Very straight forward API without making too big of a code footprint. I use this either for simple fire-and-forget animations (such as making a button pop when selected), or when I want to make a complex keyframe animation, since its keyframe support it great.
+
+* CAAnimation
+Perhaps a bit less straight-forward to use, but you need it whenever you want to animate layer properties instead of view properties. Examples of these are corner radius, shadow and border.
+
+* UIPropertyAnimator,
+What makes it different from UIView's animation methods is that it supports interactive animations. You can pause, rewind and scrub animations, which makes it quite powerful.
+
 ### Animation Types
 1. Transformation
     1. scaling
@@ -16,7 +33,6 @@ There are many types of animation style but in this repo we wanted to use a high
     3. opacity
         1. fade in
         2. fade out
-etc..
 
 #### Good Things to Remember
 
@@ -30,6 +46,7 @@ etc..
 4. when we are playing with constraint priorities we need to call the layoutIfNeeded on superview not on the view which has the constraints otherwise it will update it at the end of animation which we dont want it that way
 
 5. there are some timing curves which dedicates the animation timing curve until now with `UIView.animate()` had easIn, easOut easeInOut etc.. but now we can provide our own timing curves to give spesific timing for animations on UIPropertyViewAnimator so what we do is we provide 2 control points and make a parabol out of a linear timing curve so the animation behaves based on our control points.
+ 
 
 # Contributers
 @onurhuseyincantay
