@@ -127,5 +127,4 @@ open class AnimationManager {
         
         propertyAnimator.startAnimation()
     }
-    
 }

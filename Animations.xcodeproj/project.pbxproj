@@ -65,12 +65,12 @@
 			children = (
 				991E9DB12333A14900AC9FF2 /* Helpers */,
 				99EB63B62332601100CA6DB4 /* AppDelegate.swift */,
+				991E9DAF23339E5200AC9FF2 /* AnimationManager.swift */,
 				99EB63B82332601100CA6DB4 /* ViewController.swift */,
 				99EB63BA2332601100CA6DB4 /* Main.storyboard */,
 				99EB63BD2332601300CA6DB4 /* Assets.xcassets */,
 				99EB63BF2332601300CA6DB4 /* LaunchScreen.storyboard */,
 				99EB63C22332601300CA6DB4 /* Info.plist */,
-				991E9DAF23339E5200AC9FF2 /* AnimationManager.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
