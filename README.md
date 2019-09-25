@@ -49,4 +49,6 @@ What makes it different from UIView's animation methods is that it supports inte
  
 
 # Contributers
-@onurhuseyincantay
+[<kbd>
+<img width="50" alt="onurhuseyincantay" src="https://avatars0.githubusercontent.com/u/24936965?s=460&v=4">
+</kbd>](https://github.com/onurhuseyincantay)
