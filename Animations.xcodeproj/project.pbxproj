@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		991E9DB023339E5200AC9FF2 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E9DAF23339E5200AC9FF2 /* AnimationManager.swift */; };
+		997D23E4233A3648009D2ACE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997D23E3233A3648009D2ACE /* SpinnerView.swift */; };
 		99EB63B72332601100CA6DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EB63B62332601100CA6DB4 /* AppDelegate.swift */; };
 		99EB63B92332601100CA6DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EB63B82332601100CA6DB4 /* ViewController.swift */; };
 		99EB63BC2332601100CA6DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EB63BA2332601100CA6DB4 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		991E9DAF23339E5200AC9FF2 /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		997D23E3233A3648009D2ACE /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		99EB63B32332601100CA6DB4 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EB63B62332601100CA6DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99EB63B82332601100CA6DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,13 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		991E9DB12333A14900AC9FF2 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		99EB63AA2332601100CA6DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +58,8 @@
 		99EB63B52332601100CA6DB4 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				991E9DB12333A14900AC9FF2 /* Helpers */,
 				99EB63B62332601100CA6DB4 /* AppDelegate.swift */,
+				997D23E3233A3648009D2ACE /* SpinnerView.swift */,
 				991E9DAF23339E5200AC9FF2 /* AnimationManager.swift */,
 				99EB63B82332601100CA6DB4 /* ViewController.swift */,
 				99EB63BA2332601100CA6DB4 /* Main.storyboard */,
@@ -148,6 +143,7 @@
 			files = (
 				991E9DB023339E5200AC9FF2 /* AnimationManager.swift in Sources */,
 				99EB63B92332601100CA6DB4 /* ViewController.swift in Sources */,
+				997D23E4233A3648009D2ACE /* SpinnerView.swift in Sources */,
 				99EB63B72332601100CA6DB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

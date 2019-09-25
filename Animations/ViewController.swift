@@ -33,6 +33,7 @@ class ViewController: UIViewController {
             self.animationManager.changeColor(view: self.views[3], duration: 2, firstColor: .blue, secondColor: UIColor(named: "flatOrange")!)
             self.animationManager.rotateWithRounding(view: self.views[5], duration: 2)
             self.animationManager.rotate(view: self.views[6], duration: 2)
+           
         }
     }
  

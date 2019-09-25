@@ -85,7 +85,7 @@ open class AnimationManager {
                 view.transform = .identity
             }, completion: nil)
         }
-        CABasicAnimation
+        
         propertyAnimator.startAnimation()
     }
     
